@@ -1,9 +1,10 @@
 {%	extends	"shop/base.html"	%}
 {%	load	static	%}
+<link	href="{% static	'css/base.css'	%}"	rel="stylesheet">
 {%	block	title	%}
 {%	if	category	%}{{	category.name	}}{%	else	%}Products{%	endif	%}
 {%	endblock	%}
-<link	href="{% static	'css/base.css'	%}"	rel="stylesheet">
+
 {%	block	content	%}
         <div class="leftcolumn">
 				<h3>Categories</h3>
